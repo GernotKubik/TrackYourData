@@ -13,15 +13,24 @@ Prerequisits:
 -Programming environment (recommendation: JetBrains PyCharm https://www.jetbrains.com/pycharm/download/)
 
 Importation of the project:
+
 -Extract TrackYourData.zip
+
 -Open PyCharm
+
 -Click on open
+
 -Select the folder where TrackYourData.zip has been extracted to
+
+
 
 IMPORTANT
 How to use the scripts:
+
 -A sample log of the MariaDB Audit Plugin is already included
+
 -Execute log-to-csv.py via right-click on it and clicking 'run'. A file 'server_audit.csv' will be created.
+
 -Execute log-analysis.py via right-click on it clicking 'run'. A file 'log.rdf' will be created. The console will also print out the contents of the file.
 
 
