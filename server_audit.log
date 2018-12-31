@@ -1,0 +1,30 @@
+20181231 18:16:14,gkubik,root,localhost,22,48,QUERY,employees,'SET GLOBAL server_audit_logging=ON',0
+20181231 18:17:11,gkubik,root,localhost,22,49,QUERY,employees,'CREATE TABLE test1 ( test1ID integer unique not null primary key, testname varchar(50) not null, testnumber integer )',0
+20181231 18:17:22,gkubik,root,localhost,22,50,QUERY,employees,'CREATE TABLE test2 ( test2ID integer unique not null primary key, testname2 varchar(50) not null, testcolumn varchar(30) )',0
+20181231 18:17:28,gkubik,root,localhost,22,51,QUERY,employees,'DROP TABLE test2',0
+20181231 18:17:33,gkubik,root,localhost,22,52,QUERY,employees,'ALTER TABLE test1 ADD newcolumn varchar(50)',0
+20181231 18:17:47,gkubik,root,localhost,22,53,QUERY,employees,'INSERT INTO test1  VALUES (1, \'Ms. Test\', 1, \'Text in column\'), (2, \'Mr. Test\', 2, \'second text\')',0
+20181231 18:17:52,gkubik,root,localhost,22,54,QUERY,employees,'DELETE FROM test1 WHERE test1ID=2',0
+20181231 18:17:58,gkubik,root,localhost,22,55,QUERY,employees,'ALTER TABLE test1 DROP newcolumn',0
+20181231 18:21:50,gkubik,root,localhost,22,56,QUERY,employees,'DROP DATABASE sample',0
+20181231 18:21:50,gkubik,root,localhost,22,57,QUERY,employees,'SELECT DATABASE()',0
+20181231 18:22:00,gkubik,root,localhost,22,58,QUERY,employees,'SELECT DATABASE()',0
+20181231 18:22:07,gkubik,root,localhost,22,60,QUERY,employees,'show tables',0
+20181231 18:22:18,gkubik,root,localhost,22,61,QUERY,employees,'structure employees',1064
+20181231 18:22:24,gkubik,root,localhost,22,62,QUERY,employees,'show employees',1064
+20181231 18:22:52,gkubik,root,localhost,22,63,QUERY,employees,'show employees',1064
+20181231 18:23:16,gkubik,root,localhost,22,64,QUERY,employees,'desc employees',0
+20181231 18:25:48,gkubik,root,localhost,22,66,QUERY,employees,'SELECT first_name, last_name, gender FROM employees WHERE emp_no = 500000',0
+20181231 18:27:00,gkubik,root,localhost,22,68,QUERY,employees,'DROP DATABASE sample',1008
+20181231 18:27:11,gkubik,root,localhost,22,69,QUERY,employees,'show databases',0
+20181231 18:27:17,gkubik,root,localhost,22,70,QUERY,employees,'SELECT DATABASE()',0
+20181231 18:29:09,gkubik,root,localhost,22,72,QUERY,employees,'SELECT first_name, last_name, gender  FROM employees  WHERE emp_no = 500000',0
+20181231 18:29:15,gkubik,root,localhost,22,73,QUERY,employees,'SELECT first_name, last_name, gender  FROM employees  WHERE emp_no = 499998',0
+20181231 18:29:21,gkubik,root,localhost,22,74,QUERY,employees,'SELECT first_name, last_name, gender  FROM employees  WHERE emp_no = 499997',0
+20181231 18:29:26,gkubik,root,localhost,22,75,QUERY,employees,'SELECT first_name, last_name, gender  FROM employees  WHERE emp_no = 499996',0
+20181231 18:33:54,gkubik,root,localhost,22,0,DISCONNECT,employees,,0
+20181231 19:09:55,gkubik,root,localhost,24,94,QUERY,,'SELECT DATABASE()',0
+20181231 19:09:55,gkubik,root,localhost,24,96,QUERY,employees,'show databases',0
+20181231 19:09:55,gkubik,root,localhost,24,97,QUERY,employees,'show tables',0
+20181231 19:10:22,gkubik,root,localhost,24,107,QUERY,employees,'SELECT hire_date FROM employees WHERE emp_no = 500000',0
+20181231 19:10:25,gkubik,root,localhost,24,0,DISCONNECT,employees,,0
