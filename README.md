@@ -3,9 +3,13 @@
 This repository contains the code elements of the Bachelor thesis "Track Your Data! Semantic Searchover Logs"
 
 It consists of three main components:
-server_audit.log (MariaDB Audit Plugin logfile)
-log-to.csv.py (raw log to csv convertor)
-log-analysis.py (csv to rdf convertor)
+
+-server_audit.log (MariaDB Audit Plugin logfile)
+
+-log-to.csv.py (raw log to csv convertor)
+
+-log-analysis.py (csv to rdf convertor)
+
 
 
 Prerequisits:
